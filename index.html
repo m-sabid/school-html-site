@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./lightbox.css" rel="stylesheet" />
+    <title>School Website</title>
+  </head>
+
+  <body>
+    <main>
+      <div
+        class="bg-primary text-light px-4 d-flex align-self-center border-bottom"
+      >
+        <div class="mr-auto">
+          <strong class="navbar-brand" style="font-size: 12px"
+            >স্বাগতম স্কুলের নাম</strong
+          >
+        </div>
+        <div class="d-flex align-self-center">
+          <i class="fa-brands fa-facebook mx-2"></i>
+          <i class="fa-brands fa-linkedin mx-2"></i>
+          <i class="fa-brands fa-discord mx-2"></i>
+        </div>
+      </div>
+      <header>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide header_slider"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner h-50">
+            <div class="carousel-item active">
+              <div class="img_center">
+                <img
+                  class="image"
+                  src="./src/image/slider_1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>আপনার স্কুল এন্ড কলেজ</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img_center">
+                <img
+                  class="image"
+                  src="./src/image/slider_2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>আপনার স্কুল এন্ড কলেজ</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img_center">
+                <img
+                  class="image"
+                  src="./src/image/slider_3.jpg"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>আপনার স্কুল এন্ড কলেজ</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header carousel -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" style="font-size: 14px" href="#">
+          <i class="fa-solid fa-house-chimney"></i>
+        </a>
+        <button
+          class="navbar-toggler bg-light text-dark"
+          style="outline: none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul id="menu-primary-menu" class="navbar-nav">
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">হোম</a>
+            </li>
+            <li class="menu-item dropdown nav-item">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >পরিচালনা পরিষদ</a
+              >
+              <ul class="dropdown-menu depth_0">
+                <li
+                  class="menu-item menu-item-type-taxonomy menu-item-object-detailstax nav-item"
+                >
+                  <a href="#" class="dropdown-item">গভর্নর বডি</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-taxonomy menu-item-object-detailstax nav-item"
+                >
+                  <a href="#" class="dropdown-item">ছাত্র</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-taxonomy menu-item-object-detailstax nav-item"
+                >
+                  <a href="#" class="dropdown-item">শিক্ষক</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">নোটিশ সমূহ</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">কৃতি ছাত্র-ছাত্রী</a>
+            </li>
+            <li class="menu-item dropdown nav-item">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >ক্লাস রুটিন</a
+              >
+              <ul class="dropdown-menu depth_0">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                >
+                  <a href="#" class="dropdown-item">১০ শ্রেণী</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                >
+                  <a href="#" class="dropdown-item">৯ম শ্রেণী</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                >
+                  <a href="#" class="dropdown-item">৮ম শ্রেণী</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                >
+                  <a href="#" class="dropdown-item">৭ম শ্রেণী</a>
+                </li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                >
+                  <a href="#" class="dropdown-item">৬ষ্ঠ শ্রেণী</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">ফটোগ্যালারী</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">ভিডিও গ্যালারী</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">পরীক্ষার ফলাফল</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">ভর্তি বিজ্ঞপ্তি</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a href="#" class="nav-link">যোগাযোগ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main body -->
+      <div class="row mt-4">
+        <!-- Notice Sections -->
+        <section class="col-lg-8">
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="box">
+                <!-- নোটিশ সমূহ -->
+                <div class="bg-section p-4 border">
+                  <h2 class="mb-4">নোটিশ সমূহ</h2>
+                  <ul class="px-4">
+                    <li>
+                      <i class="fa-regular fa-circle-right"></i>
+                      সিভিল সার্ভিস অনুষদ সদস্য হিসেবে অন্তর্ভুক্তির জন্য আবেদন
+                      আহবান
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-right"></i>
+                      সিভিল সার্ভিস অনুষদ সদস্য হিসেবে অন্তর্ভুক্তির জন্য আবেদন
+                      আহবান
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-right"></i>
+                      সিভিল সার্ভিস অনুষদ সদস্য হিসেবে অন্তর্ভুক্তির জন্য আবেদন
+                      আহবান
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-right"></i>
+                      সিভিল সার্ভিস অনুষদ সদস্য হিসেবে অন্তর্ভুক্তির জন্য আবেদন
+                      আহবান
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-right"></i>
+                      সিভিল সার্ভিস অনুষদ সদস্য হিসেবে অন্তর্ভুক্তির জন্য আবেদন
+                      আহবান
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary">আরো</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- আমাদের সম্পর্কে -->
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section pt-4 pl-4 pr-4 border">
+                <h5>আমাদের সম্পর্কে</h5>
+                <div class="d-flex">
+                  <div class="h-5">
+                    <img
+                      src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/8b2ed27a82020bfb7accc7cf7b2dcae9.png"
+                      alt=""
+                    />
+                  </div>
+                  <ul class="px-4">
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                    <li class="about_us_li">
+                      <a href="">
+                        <i class="fa-regular fa-circle-right"></i>
+                        এটা হেডিং হবে
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End আমাদের সম্পর্কে -->
+
+            <!-- ব্লগ সমূহ : -->
+            <div class="col-md-12 mt-3">
+              <h4 class="font-weight-bold">ব্লগ সমূহ :</h4>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section border p-2">
+                <div class="blog overflow-hidden">
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+                <div class="mt-2">
+                  <a href="">এটি একটি হেডিং</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section border p-2">
+                <div class="blog overflow-hidden">
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+                <div class="mt-2">
+                  <a href="">এটি একটি হেডিং</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section border p-2">
+                <div class="blog overflow-hidden">
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+                <div class="mt-2">
+                  <a href="">এটি একটি হেডিং</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="box bg-section border p-2">
+                <div class="blog overflow-hidden">
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+                <div class="mt-2">
+                  <a href="">এটি একটি হেডিং</a>
+                </div>
+              </div>
+            </div>
+            <!-- End ব্লগ সমূহ : -->
+
+            <!-- ফটোগ্যালারী -->
+            <div class="col-md-12 mt-3">
+              <h4 class="font-weight-bold">ফটোগ্যালারী :</h4>
+            </div>
+            <div class="row px-4">
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+              <div class="col-md-3 px-0 border p-1">
+                <a
+                  href="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                  data-lightbox="models"
+                  data-title="Caption here"
+                >
+                  <img
+                    src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/fff-1.png"
+                    alt="Image 1"
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End ফটোগ্যালারী -->
+            <!-- Google map -->
+            <div class="col-md-12 mt-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116840.83211094874!2d90.40035840000002!3d23.773184000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1696578551787!5m2!1sen!2sbd"
+                style="width: 100%"
+                class="border"
+                height="350"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- End Google map -->
+          </div>
+        </section>
+
+        <!-- Section 2 Side Section -->
+        <section class="col-md-4">
+          <div class="box bg-section w-full overflow-hidden">
+            <img
+              src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/Bangladesh-Directory.jpg"
+              alt=""
+              style="width: 100%; margin-bottom: 10px"
+            />
+            <img
+              src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/Bangladesh-Directory.jpg"
+              alt=""
+              style="width: 100%; margin-bottom: 10px"
+            />
+            <img
+              src="https://tmitstore.com/zayatschooltheme/wp-content/uploads/2023/01/Bangladesh-Directory.jpg"
+              alt=""
+              style="width: 100%; margin-bottom: 10px"
+            />
+          </div>
+        </section>
+      </div>
+
+      <footer class="mt-5">
+        <img src="./src/image/footertopnew.png" alt="" style="width: 100%" />
+        <div class="d-flex justify-content-between">
+          <div>
+            <h5 class="font-weight-bold my-1">
+              © ইদ্যোক্তা কর্তৃক সংরক্ষিত ২০২৩
+            </h5>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>কারিগরি সহায়তা:</p>
+            <img src="./src/image/np-logo-set.jpg" alt="">
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap -->
+
+    <script src="./main.js"></script>
+    <script src="./lightbox-plus-jquery.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
